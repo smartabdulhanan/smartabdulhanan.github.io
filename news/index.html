@@ -17,13 +17,59 @@
         nav a:hover, nav a.active { color: #ffcc00; }
         section { padding: 2rem 15%; max-width: 1200px; margin: 0 auto; }
         h2 { color: #1a2b4a; margin-bottom: 1.5rem; border-left: 4px solid #ffcc00; padding-left: 0.8rem; }
-        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 2rem; }
-        .video-card { background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); text-align: center; }
-        iframe { width: 100%; height: 200px; border-radius: 8px; border: none; margin-bottom: 1rem; }
-        .youtube-btn { display: inline-block; background: #d00; color: white; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; font-weight: 500; }
+        
+        /* Newspaper Image Style */
+        .news-paper-img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .video-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            border: none;
+            margin-bottom: 1rem;
+        }
+        .youtube-btn {
+            display: inline-block;
+            background: #d00;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 1rem 0 2rem;
+        }
         .youtube-btn:hover { background: #b00; }
-        footer { background: #1a2b4a; color: white; text-align: center; padding: 1.5rem; margin-top: 3rem; }
-        @media (max-width: 768px) { section { padding: 2rem 8%; } nav a { margin: 0 0.5rem; font-size: 0.9rem; } }
+        footer {
+            background: #1a2b4a;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            section { padding: 2rem 8%; }
+            nav a { margin: 0 0.5rem; font-size: 0.9rem; }
+        }
     </style>
 </head>
 <body>
@@ -31,6 +77,7 @@
         <h1>📰 Latest News</h1>
         <p>Authentic • Fair • Trusted Updates</p>
     </header>
+
     <nav>
         <a href="/">🏠 Home</a>
         <a href="/vlogs/">🎬 Vlogs</a>
@@ -39,16 +86,47 @@
         <a href="/about/">👤 About</a>
         <a href="/contact/">📞 Contact</a>
     </nav>
+
     <section>
+        <!-- Newspaper Picture at Top -->
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+             alt="Newspaper and News" class="news-paper-img">
+
         <h2>Trusted News Coverage</h2>
         <p>Get accurate, fair and trusted news coverage. I bring you facts, current affairs and important updates — no fake news, no bias, just clear truth. Always reporting with respect and responsibility.</p>
-        <a href="https://www.youtube.com/@YOUR_NEWS_CHANNEL" target="_blank" class="youtube-btn">👉 Visit Full News Channel</a>
+
+        <!-- YouTube Channel Link -->
+        <a href="https://www.youtube.com/@YOUR_NEWS_CHANNEL" target="_blank" class="youtube-btn">👉 Visit Full News Channel on YouTube</a>
+
         <div class="video-grid">
+            <!-- News Video 1 -->
             <div class="video-card">
                 <iframe src="https://www.youtube.com/embed/NEWS_ID_1" allowfullscreen></iframe>
                 <h3>Latest Headline Title</h3>
-                <p>Short summary of news</p>
+                <p>Short summary of the news story</p>
+                <a href="https://www.youtube.com/watch?v=NEWS_ID_1" target="_blank" class="youtube-btn">Watch on YouTube</a>
             </div>
+
+            <!-- News Video 2 -->
             <div class="video-card">
                 <iframe src="https://www.youtube.com/embed/NEWS_ID_2" allowfullscreen></iframe>
-                <h3>Important Update Title
+                <h3>Important Update Title</h3>
+                <p>Short summary of the news story</p>
+                <a href="https://www.youtube.com/watch?v=NEWS_ID_2" target="_blank" class="youtube-btn">Watch on YouTube</a>
+            </div>
+
+            <!-- News Video 3 -->
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/NEWS_ID_3" allowfullscreen></iframe>
+                <h3>Current Affairs Report</h3>
+                <p>Short summary of the news story</p>
+                <a href="https://www.youtube.com/watch?v=NEWS_ID_3" target="_blank" class="youtube-btn">Watch on YouTube</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Smart Abdul Hanan — All Rights Reserved</p>
+    </footer>
+</body>
+</html>
