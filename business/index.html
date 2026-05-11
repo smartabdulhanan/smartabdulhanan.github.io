@@ -1,1 +1,127 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business | Smart Abdul Hanan</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, Arial, sans-serif; }
+        body { background-color: #f5f7fa; color: #333; line-height: 1.7; }
+        header { background: linear-gradient(135deg, #1a2b4a, #2c4270); color: white; padding: 2rem; text-align: center; }
+        header h1 { font-size: 2.2rem; }
+        nav { background: #243b67; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: 500; }
+        nav a:hover, nav a.active { color: #ffcc00; }
+        section { padding: 2rem 15%; max-width: 1200px; margin: 0 auto; }
+        h2 { color: #1a2b4a; margin-bottom: 1.5rem; border-left: 4px solid #ffcc00; padding-left: 0.8rem; }
+        
+        /* Business Banner Image */
+        .business-banner {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .product-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .price {
+            font-size: 1.4rem;
+            color: #1a2b4a;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+        .buy-btn {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 0.8rem;
+        }
+        .buy-btn:hover { background: #218838; }
+        footer { background: #1a2b4a; color: white; text-align: center; padding: 1.5rem; margin-top: 3rem; }
+        @media (max-width: 768px) { section { padding: 2rem 8%; } nav a { margin: 0 0.5rem; font-size: 0.9rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>💼 My Business</h1>
+        <p>Quality Products • Trusted Services • Customer Satisfaction</p>
+    </header>
+    <nav>
+        <a href="/">🏠 Home</a>
+        <a href="/vlogs/">🎬 Vlogs</a>
+        <a href="/news/">📰 News</a>
+        <a href="/business/" class="active">💼 Business</a>
+        <a href="/about/">👤 About</a>
+        <a href="/contact/">📞 Contact</a>
+    </nav>
+    <section>
+        <!-- Professional Business Picture -->
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+             alt="Professional Business" class="business-banner">
+
+        <h2>Our Products & Services</h2>
+        <p>We offer high-quality products with best prices and reliable service. Customer trust is our first priority. Browse our products below and order easily through the buy link.</p>
+
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 1" class="product-img">
+                <h3>Premium Quality Item</h3>
+                <p>High quality material, durable design, perfect for daily use and gifts.</p>
+                <div class="price">£ 25.99</div>
+                <a href="https://your-buy-link.com/product1" target="_blank" class="buy-btn">🛒 Buy Now</a>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 2" class="product-img">
+                <h3>Exclusive Collection</h3>
+                <p>Limited edition product with modern style and excellent finishing.</p>
+                <div class="price">£ 45.50</div>
+                <a href="https://your-buy-link.com/product2" target="_blank" class="buy-btn">🛒 Buy Now</a>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product 3" class="product-img">
+                <h3>Best Seller Package</h3>
+                <p>Best value package including all accessories and warranty.</p>
+                <div class="price">£ 60.00</div>
+                <a href="https://your-buy-link.com/product3" target="_blank" class="buy-btn">🛒 Buy Now</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2026 Smart Abdul Hanan — All Rights Reserved</p>
+    </footer>
+</body>
+</html>
